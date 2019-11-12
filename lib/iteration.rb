@@ -52,48 +52,8 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten this!
   
-#   row_index = 0 
-#   new_array = []
-#   while row_index < src.count do 
-#     element_index = 0 
-#     while element_index < src[row_index].count do 
-#       total = 0
-#       if src[row_index][0] % 2 == 0
-#         total = src[row_index][0]
-#       end
-#       if src[row_index][1] % 2 == 0
-#         new_total = total + src[row_index][1]
-#       end
-#       new_array << new_total
-#       element_index += 1
-#     end
-#     row_index += 1
-#     # new_array.length.times { |num| sum += num}
-#   end 
-# new_total
-
-  # row_index = 0 
-  # outer_array = []
-  # while row_index < src.count do 
-  #   element_index = 0
-  #   inner_array = []
-  #   while element_index < src[row_index].count do 
-  #     if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0
-  #       inner_array << src[row_index][element_index]
-  #     end
-  #   element_index += 1 
-  #   end
-  #   outer_array << inner_array
-  #   row_index += 1
-  # puts outer_array
-  # end
-  # # sum = 0
-  # # new_array.each { |num| sum += num }
-  # # sum 
- 
   row_index = 0 
   sum = 0 
-  # new_array = []
   total = 0 
   while row_index < src.count do
     element_index = 0
@@ -104,11 +64,8 @@ def total_even_pairs(src)
       end
     element_index += 1
     end
-  # new_array << sum 
   row_index += 1
   total += sum
-  #   puts new_array
-  # total = new_array.each { |num| sum += num }
   end
 total 
 end
