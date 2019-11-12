@@ -94,6 +94,7 @@ def total_even_pairs(src)
   row_index = 0 
   sum = 0 
   # new_array = []
+  total = 0 
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count do
@@ -103,10 +104,11 @@ def total_even_pairs(src)
       end
     element_index += 1
     end
-  new_array << sum 
+  # new_array << sum 
   row_index += 1
-    puts new_array
-  total = new_array.each { |num| sum += num }
+  total += sum
+  #   puts new_array
+  # total = new_array.each { |num| sum += num }
   end
 total 
 end
